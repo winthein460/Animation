@@ -76,12 +76,12 @@ class _CircleLoadingAnimation3State extends State<CircleLoadingAnimation3>
                 builder:
                     (context, child) => Transform.translate(
                       offset: Offset(
-                        72,
-                        _animation.value == 0 ? 10 : (123 * _animation.value),
+                        82,
+                        _animation.value == 0 ? 10 : (133 * _animation.value),
                       ),
                       child: Container(
-                        width: 30,
-                        height: 30,
+                        width: 28,
+                        height: 28,
                         decoration: BoxDecoration(
                           color: Colors.pinkAccent,
                           shape: BoxShape.circle,

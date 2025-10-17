@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:animation_test_prj/all_animation.dart';
-import 'package:animation_test_prj/circle_loading_animation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

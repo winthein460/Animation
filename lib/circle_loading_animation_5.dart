@@ -3,16 +3,15 @@ import 'package:animation_test_prj/widget/fifth_circle_painter.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
-
-
-class ProgressScreen extends StatefulWidget {
-  const ProgressScreen({super.key});
+class CircleLoadingAnimation5 extends StatefulWidget {
+  const CircleLoadingAnimation5({super.key});
 
   @override
-  State<ProgressScreen> createState() => _ProgressScreenState();
+  State<CircleLoadingAnimation5> createState() =>
+      _CircleLoadingAnimation5State();
 }
 
-class _ProgressScreenState extends State<ProgressScreen>
+class _CircleLoadingAnimation5State extends State<CircleLoadingAnimation5>
     with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
   late Animation<double> _animation;
@@ -90,17 +89,17 @@ class _ProgressScreenState extends State<ProgressScreen>
                   child: SlideTransition(
                     position: _slideAnimation,
                     child: Transform.translate(
-                      offset: _calculateIndicatorOffset(_animation.value),
+                      offset: _calculateOffset(_animation.value),
                       child: Container(
                         width: 30,
                         height: 30,
-                        decoration: const BoxDecoration(
-                          color: Colors.pink,
+                        decoration: BoxDecoration(
+                          color: Colors.lightGreen,
                           shape: BoxShape.circle,
                           boxShadow: [
                             BoxShadow(
                               color: Colors.greenAccent,
-                              blurRadius: 8,
+                              blurRadius: 2,
                               spreadRadius: -2,
                             ),
                           ],
@@ -117,7 +116,7 @@ class _ProgressScreenState extends State<ProgressScreen>
     );
   }
 
-  Offset _calculateIndicatorOffset(double animationValue) {
+  Offset _calculateOffset(double animationValue) {
     double startAngle = 90.toRadians;
 
     final double sweepAngle = (360 * animationValue).toRadians;

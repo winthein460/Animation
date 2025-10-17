@@ -3,6 +3,9 @@ import 'package:animation_test_prj/circle_loading_animation_2.dart';
 import 'package:animation_test_prj/circle_loading_animation_3.dart';
 import 'package:animation_test_prj/circle_loading_animation_4.dart';
 import 'package:animation_test_prj/circle_loading_animation_5.dart';
+import 'package:animation_test_prj/circle_loading_animation_6.dart';
+import 'package:animation_test_prj/circle_loading_animation_7.dart';
+import 'package:animation_test_prj/cricle_loading_animation_8.dart';
 import 'package:flutter/material.dart';
 
 class AllAnimation extends StatefulWidget {
@@ -62,7 +65,31 @@ class _AllAnimationState extends State<AllAnimation> {
               color: Colors.white,
               borderRadius: BorderRadius.circular(16),
             ),
-            child: ProgressScreen (),
+            child: CircleLoadingAnimation5 (),
+          ),
+          Container(
+            decoration: BoxDecoration(
+              boxShadow: [BoxShadow(color: Colors.black)],
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: CircleLoadingAnimation6(),
+          ),
+          Container(
+            decoration: BoxDecoration(
+              boxShadow: [BoxShadow(color: Colors.black)],
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: CircleLoadingAnimation7(),
+          ),
+           Container(
+            decoration: BoxDecoration(
+              boxShadow: [BoxShadow(color: Colors.black)],
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: CircleLoadingAnimation8(),
           ),
         ],
       ),
